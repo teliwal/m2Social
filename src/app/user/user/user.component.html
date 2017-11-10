@@ -1,0 +1,15 @@
+<h4>Les Details de L'Utilisateur</h4> 
+<p *ngIf="user">
+  <span>Utilisateur numero {{user.id}}</span><br>
+  <span>{{user.firstName}} {{user.lastName}}</span>
+</p>
+<div *ngIf="posts">
+    <span>Mes Posts sont: </span>
+      <ul>
+        <li *ngFor="let postBoucle of posts,let i=index">
+          {{postBoucle.id}} 
+          <a *ngIf="postBoucle" routerLink="../../posts/{{postBoucle.id}}" >{{postBoucle.content}}</a>
+        </li>
+      </ul>
+</div>
+  

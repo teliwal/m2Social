@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let postBoucle of posts,let i=index">
+    {{postBoucle.id}} 
+    <a *ngIf="postBoucle" [routerLink]="[i+1]" >{{postBoucle.content}}</a>
+  </li>
+</ul>
+

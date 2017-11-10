@@ -1,0 +1,8 @@
+<h5>Les Details du post</h5> <br/>
+<p *ngIf="post">
+<span>Post num {{post.id}} de {{post.userId}}</span><br/>
+<span>{{post.content}}</span><br/>
+<span>Poste le {{post.timestamp}}</span><br/>
+<img *ngIf=post.img src={{post.img}}/>
+</p>
+

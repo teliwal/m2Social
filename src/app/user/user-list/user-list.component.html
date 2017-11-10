@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let userBoucle of users,let i=index">
+      {{userBoucle.id}} 
+      <a *ngIf="userBoucle" [routerLink]="[i+1]" >{{userBoucle.firstName}}</a>
+    </li>
+</ul>
+  
